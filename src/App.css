@@ -5,7 +5,11 @@ padding: 0;
 box-sizing: border-box;
 font-family: 'Alegreya', serif;
 } 
-
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
 html{ 
   background: url(./Public/Images/back.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
