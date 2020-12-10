@@ -78,11 +78,6 @@ h1{
   background-color: rgb(255, 200, 117);
   border-radius: 50px;
 }
-
-a:hover{
-  /* background-color: rgb(255, 200, 117); */
-  border-radius: 50px;
-}
 button{
   cursor: pointer;
 }
@@ -102,7 +97,7 @@ button{
 }
 
 
- .nav-links li a:active{
+ .nav-links li a:hover{
   background-color: rgb(255, 200, 117);
   border-radius: 50px;
   
@@ -201,11 +196,26 @@ button{
   font-weight: normal;
   text-align: justify;
   /* padding: 20px; */
-  border: 3px solid red;
 }
 @media (max-width: 800px) {
   .container-about{
     flex-direction: column;
+    padding: 20px;
+  }
+  .container-about #para{
+    width: 100%;
+    padding: 5px;
+    line-height: 1.5;
+  }
+  .download{
+    text-decoration: none;
+    margin-left: 20%;
+    margin-right:20% ;
+  }
+  .download button:hover{
+    color: red;
+    font-size: 22px;
+    background: lightblue;
   }
 }
 
