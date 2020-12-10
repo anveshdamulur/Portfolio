@@ -3,7 +3,7 @@ import React from 'react';
 function Home() {
   return (
 
-       <div className='banner'>
+         <div className='banner'>
               <div className='card'>
                 <div className='card-image'>
                 <img src={profile} alt='img'></img>
@@ -18,7 +18,7 @@ function Home() {
                 </div>
                 </div>
               </div>
-       </div>
+        </div>
       );
 }
 export default Home;

@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
 *{ 
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Alegreya', serif;
 } 
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
-}
+
 html{ 
   background: url(./Public/Images/back.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -21,10 +18,6 @@ html{
 body{
   min-height: 100vh;
   color: aliceblue;
-  
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 h1{
@@ -43,6 +36,9 @@ h1{
   box-shadow: 0 20px 20px rgba(220, 20, 60, 0.5);
   transform: 10px;
 }
+
+
+
 .header{
   color: red;
 }
@@ -120,7 +116,12 @@ button{
   padding: 0rem 5rem;
   background-color: lightblue;
 }
-
+@media (max-width: 800px) {
+  .card  {
+    flex-direction: row;
+    width: 400px;
+  }
+}
 .card-image{
   margin-top: 80px;
   min-height: 34vh;
@@ -134,7 +135,12 @@ button{
   z-index: 2;
   border-radius: 50%;
 }
-
+@media (max-width: 800px) {
+  .card-image img{
+    flex-direction: row;
+    width: 300px;
+  }
+}
 .circle{
   width: 18rem;
   height: 18rem;
@@ -185,6 +191,11 @@ button{
   /* padding: 20px; */
   border: 3px solid red;
 }
+@media (max-width: 800px) {
+  .container-about{
+    flex-direction: column;
+  }
+}
 
 #header{
   margin: auto;
@@ -199,11 +210,15 @@ button{
   border-radius: 50%;
   padding: 20px;
 }
-
+@media (max-width: 800px) {
+  .container-about-avathar img{
+    flex-direction: row;
+    width: 400px;
+  }
+}
 .container-about-info{
   padding: 0 6rem;
 }
-
 
  #para p{
   font-size: 22px;
@@ -229,7 +244,11 @@ button{
   margin-right: 10%;
   height: 50px;
 }
-
+@media (max-width: 800px) {
+  .container-skills{
+    flex-direction: row;
+  }
+}
 .skill-image{
   border-radius: 8px;
   width: 33%;
@@ -382,17 +401,24 @@ button{
  justify-content: space-between;
  align-items: top;
  padding: 0 5rem;
- height: 50vh;
+ height: auto;
  width: 100%;
- flex-wrap: wrap;
- position: relative;
-
+ border: 2px solid red;
+}
+@media (max-width: 1000px) {
+  .container-project{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 div .project-data{
-  width:30%;
-  
+  width:auto;
+  height: auto;
 }
+
+
 .project-data-header{
   display: flex;
   justify-content: center;
@@ -401,7 +427,6 @@ div .project-data{
   color: rgb(81, 171, 250);
 }
 .project-data-desc{
-  position: absolute;
   bottom: 0;
   top: 40%;
   width: 350px;
