@@ -41,9 +41,13 @@ h1{
 
 .header{
   color: red;
+  font-size: 40px;
+  
 }
 .App #head-text{
   color: red;
+  font-size: 40px;
+  padding: 10px;
 }
 
 .navbar{
@@ -87,15 +91,23 @@ button{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  cursor: pointer;
 
 }
-
 .nav-links a{
   color: white;
   cursor: pointer;
-  width: 10px;
+  width: auto;
   padding: 10px;
 }
+
+
+ .nav-links li a:active{
+  background-color: rgb(255, 200, 117);
+  border-radius: 50px;
+  
+}
+
 
 .banner{
   display: flex;
@@ -247,6 +259,11 @@ button{
 @media (max-width: 800px) {
   .container-skills{
     flex-direction: row;
+  }
+  .skill-image img{
+    width: 80px;
+    height: 10vh;
+    border-radius: 15px;
   }
 }
 .skill-image{
@@ -434,4 +451,26 @@ div .project-data{
   line-height: 30px;
   text-indent: 2px;
   color: rgb(231, 220, 170);
+}
+.container-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-info{
+  font-family: 'Alegreya', serif;
+  font-size: 22px;
+  text-align: center;
+  line-height: 2;
+  color: rgb(231, 220, 170);;
+
+}
+@media (max-width: 800px) {
+  .container-contact{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
 }
