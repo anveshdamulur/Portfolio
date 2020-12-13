@@ -1,23 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 
 *{ 
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Alegreya', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya', serif;
+    
+
 } 
 
 html{ 
-  background: url(./Public/Images/back.jpg) no-repeat center center fixed; 
+  background: url(./Public/Images/leone-venter-VieM9BdZKFo-unsplash.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover ;
+  position: relative;
+
 }
 
 body{
   min-height: 100vh;
-  color: aliceblue;
+  color: rgb(2, 40, 73);
 }
 
 h1{
@@ -30,8 +34,9 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  color: white;
+  padding: 10px;
+  height: 8vh;
+  color: rgb(2, 40, 73);;
   /* box-shadow: 0 20px 20px rgba(114, 253, 54, 0.5); */
   box-shadow: 0 20px 20px rgba(220, 20, 60, 0.5);
   transform: 10px;
@@ -54,7 +59,7 @@ h1{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
+  color: rgb(0, 2, 3);
   list-style: none;
   font-size: large;
   font-weight: bolder;
@@ -68,7 +73,7 @@ h1{
 }
 
 .nav-home a{
-  color: white;
+  color: rgb(0, 2, 3);
   cursor: pointer;
   width: 10px;
   padding: 10px;
@@ -90,17 +95,16 @@ button{
 
 }
 .nav-links a{
-  color: white;
+  color: rgb(0, 2, 3);
   cursor: pointer;
   width: auto;
   padding: 10px;
 }
 
 
- .nav-links li a:hover{
+ a:hover{
   background-color: rgb(255, 200, 117);
   border-radius: 50px;
-  
 }
 
 
@@ -195,12 +199,30 @@ button{
   font-size: large;
   font-weight: normal;
   text-align: justify;
+  position: relative;
   /* padding: 20px; */
+}
+.download{
+  text-decoration: none;
+  margin-left: 20%;
+  margin-right:20% ;
+  padding: 10px;
+}
+.download button{
+  padding: 3px;
+  box-shadow: 0 2px 2px red;
+  position: absolute;
+}
+.download button:hover{
+  color: red;
+  font-size: 22px;
+  background: lightblue;
+  
 }
 @media (max-width: 800px) {
   .container-about{
     flex-direction: column;
-    padding: 20px;
+    padding: 5px;
   }
   .container-about #para{
     width: 100%;
@@ -216,6 +238,7 @@ button{
     color: red;
     font-size: 22px;
     background: lightblue;
+    box-shadow: 0 2px 2px red;
   }
 }
 
@@ -235,27 +258,33 @@ button{
 @media (max-width: 800px) {
   .container-about-avathar img{
     flex-direction: row;
-    width: 400px;
+    width: 300px;
+    height: 300px;
+    margin-left: 8px;
+    border: 5px solid red;
+
+  }
+  .container-about-info{
+    width: 300px;
+    margin-left: 15px ;
   }
 }
 .container-about-info{
-  padding: 0 6rem;
+  padding:0 2rem;
 }
 
  #para p{
   font-size: 22px;
   line-height: 30px;
   text-indent: 2px;
-  color: rgb(231, 220, 170);
-}
+  color: rgb(2, 40, 73);}
 
 .footer-text p{
  
   font-size: 22px;
   line-height: 30px;
   text-indent: 2px;
-  color: rgb(231, 220, 170);
-}
+  color: rgb(2, 40, 73);}
 
 .container-skills{
   display: flex;
@@ -312,6 +341,7 @@ button{
   height: 10px;
   float: left;
   background: blue;
+  list-style:none;
 }
 .html{
   width: 90%;
@@ -425,14 +455,15 @@ button{
 .container-project{
  display: flex;
  flex-direction: row;
- justify-content: space-between;
+ justify-content: center;
  align-items: top;
- padding: 0 5rem;
+ padding: 0 2rem;
  height: auto;
  width: 100%;
- border: 2px solid red;
+ background: transparent;
+
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .container-project{
     flex-direction: column;
     justify-content: center;
@@ -443,15 +474,23 @@ button{
 div .project-data{
   width:auto;
   height: auto;
+  padding: 25px;
 }
-
+@media (max-width: 800px) {
+  div .project-data{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+}
 
 .project-data-header{
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 20vh;
-  color: rgb(81, 171, 250);
+  color: rgba(8, 69, 238, 0.9);
 }
 .project-data-desc{
   bottom: 0;
@@ -460,8 +499,13 @@ div .project-data{
   font-size: 22px;
   line-height: 30px;
   text-indent: 2px;
-  color: rgb(231, 220, 170);
+  color: black;
 }
+.project-data-desc a{
+  text-decoration: none;
+  padding: 5px;
+}
+
 .container-contact{
   display: flex;
   flex-direction: column;
@@ -483,4 +527,11 @@ div .project-data{
     align-items: center;
     padding: 5px;
   }
+}
+
+.container-contact a{
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
 }

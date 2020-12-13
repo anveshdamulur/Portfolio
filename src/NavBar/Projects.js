@@ -24,6 +24,7 @@ function Projects() {
                         <li>led the team of 5 members.</li>
                         <li>Drafted the project document.</li>
                       </ul>
+                      <a></a>
                 </div>
             </div>
          
@@ -40,6 +41,7 @@ a central hub or "gateway". As a web developer. </li>
 JAVA and MYSQL(backend), HTML and CSS, JavaScript and NodeJS.</li>
                         <li>Defined project scope and drafted the project document.</li>
                       </ul>
+                      <a href='https://github.com/anveshdamulur/EmployeeManagement'>Git Link</a>
                 </div>
             </div>
           
