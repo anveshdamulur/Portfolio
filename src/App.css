@@ -10,7 +10,7 @@
 } 
 
 html{ 
-  background: url(./Public/Images/leone-venter-VieM9BdZKFo-unsplash.jpg) no-repeat center center fixed; 
+  background: url(./Public/Images/back.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +21,7 @@ html{
 
 body{
   min-height: 100vh;
-  color: rgb(2, 40, 73);
+  color: rgb(255, 255, 255);
 }
 
 h1{
@@ -36,7 +36,7 @@ h1{
   align-items: center;
   padding: 10px;
   height: 8vh;
-  color: rgb(2, 40, 73);;
+  color: lavender;
   /* box-shadow: 0 20px 20px rgba(114, 253, 54, 0.5); */
   box-shadow: 0 20px 20px rgba(220, 20, 60, 0.5);
   transform: 10px;
@@ -59,7 +59,7 @@ h1{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgb(0, 2, 3);
+
   list-style: none;
   font-size: large;
   font-weight: bolder;
@@ -73,14 +73,14 @@ h1{
 }
 
 .nav-home a{
-  color: rgb(0, 2, 3);
+  color: lavender;
   cursor: pointer;
   width: 10px;
   padding: 10px;
 }
 
 .nav-home a:hover{
-  background-color: rgb(255, 200, 117);
+  background-color: rgb(219, 21, 21);
   border-radius: 50px;
 }
 button{
@@ -95,7 +95,7 @@ button{
 
 }
 .nav-links a{
-  color: rgb(0, 2, 3);
+  color: lavender;
   cursor: pointer;
   width: auto;
   padding: 10px;
@@ -103,89 +103,132 @@ button{
 
 
  a:hover{
-  background-color: rgb(255, 200, 117);
+  background-color: rgb(219, 21, 21);
   border-radius: 50px;
 }
 
 
 .banner{
   display: flex;
-  margin-left: 25%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 30px;
-  width: 50%;
+  width: 100%;
   opacity: 0.9;
 }
 
 .card {
-  /* min-height: 80vh; */
-  width: 35rem;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  align-items: center;
+  flex-direction: row;
+  width: 70%;
+  height: 40rem;
   box-shadow: 0 20px 20px rgba(245, 130, 130, 0.3), 0px 0px 50px rgba(243, 120, 120, 0.3);
   border-radius: 30px;
   padding: 0rem 5rem;
-  background-color: lightblue;
+  background-color: rgba(206, 239, 250,0.2);
+
 }
+
 @media (max-width: 800px) {
   .card  {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    border: 5px solid red;
+
+  }
+  .card-text{
     flex-direction: row;
-    width: 400px;
+    width: 100%;
+    padding: 10px;
+  }
+  .circle{
+    flex-direction:row;
+    width: 100%;
+    height: 50vh;
+    border: 3px solid green;
+  }
+  .card-image img{
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    height: 45vh;
+    border: 1px soli yellow;
+
   }
 }
 .card-image{
-  margin-top: 80px;
-  min-height: 34vh;
+  /* margin-top: 80px;
+  min-height: 34vh; */
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+
  }
 
 .card-image img{
-  width: 12rem;
+  width: auto;
   z-index: 2;
-  border-radius: 50%;
-}
-@media (max-width: 800px) {
-  .card-image img{
-    flex-direction: row;
-    width: 300px;
-  }
+  border-radius: 10%;
+  padding: 20px;
+  width: 25rem ;
+  height: 25rem;
 }
 .circle{
-  width: 18rem;
-  height: 18rem;
+  width: 25rem;
+  height: 25rem;
   background: linear-gradient(
     to right,
-    rgba(245,70,66,0.75),
+    rgba(105, 74, 74, 0.75),
     rgba(8,83,156,0.75)
   );
   padding: 20px;
   position: absolute;
-  border-radius: 50%;
+  border-radius: 10%;
   z-index: 1;
+  
 }
 
 .card-text{
-  margin-top: 30px;
-  min-height: 35vh;
   padding: 35px;
-  font-size: 1rem;
-  padding: 2rem 0rem;
+  padding: 20px;
   font-weight: lighter;
-  color: rgba(0, 0, 0, 0.986);
-  text-align: justify;
+  color: rgba(255, 238, 7, 0.986);
+  text-align: top;
+  
 }
 
+.card-text h1{
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-style: italic;
+  background:rgba(240, 236, 236, 0.2);
+  border-radius: 20px;
+}
+.card-text h1 #emoji{
+  color: rgb(2, 14, 56);
+  padding: 2px;
 
+}
+.card-para span{
+  font-size: 1.7rem;
+  font-weight: initial;
 
+}
 .card-text #sub-text{
-  color: red;
+  color: rgb(255, 160, 160);
+
 }
 
-.card-para h2{
-  font-size: large;
-}
+
 
 .container-about{
   display: flex;
@@ -204,18 +247,24 @@ button{
 }
 .download{
   text-decoration: none;
-  margin-left: 20%;
-  margin-right:20% ;
-  padding: 10px;
+  /* margin-left: 20%;
+  margin-right:20% ; */
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
 }
 .download button{
-  padding: 3px;
-  box-shadow: 0 2px 2px red;
-  position: absolute;
+  padding: 1px;
+  box-shadow: 3px 3px 3px red;
+  font-size: 19px;
+  font-weight: bold;
+  width: 150px;
 }
 .download button:hover{
   color: red;
-  font-size: 22px;
+  font-size: 19px;
   background: lightblue;
   
 }
@@ -223,20 +272,32 @@ button{
   .container-about{
     flex-direction: column;
     padding: 5px;
+    border: 2px solid red;
   }
   .container-about #para{
     width: 100%;
     padding: 5px;
     line-height: 1.5;
+    border: 1px solid orange;
   }
   .download{
+    border: 2px solid blue;
+    width: auto;
+    padding: 5px; 
+  }
+  .download button{
     text-decoration: none;
-    margin-left: 20%;
-    margin-right:20% ;
+    padding: 5px;
+    width: 100px;
+    height: auto;
+    font-size: 15px;
+    color: black;
+    
   }
   .download button:hover{
     color: red;
-    font-size: 22px;
+    font-size: 15px;
+    padding: 3px;
     background: lightblue;
     box-shadow: 0 2px 2px red;
   }
@@ -277,14 +338,16 @@ button{
   font-size: 22px;
   line-height: 30px;
   text-indent: 2px;
-  color: rgb(2, 40, 73);}
+  color: rgb(255, 255, 255);
+}
 
 .footer-text p{
  
   font-size: 22px;
   line-height: 30px;
   text-indent: 2px;
-  color: rgb(2, 40, 73);}
+  color: rgb(255, 255, 255);
+}
 
 .container-skills{
   display: flex;
@@ -294,6 +357,7 @@ button{
   margin-left: 10%;
   margin-right: 10%;
   height: 50px;
+  color: rgb(255, 255, 255);
 }
 @media (max-width: 800px) {
   .container-skills{
@@ -499,7 +563,7 @@ div .project-data{
   font-size: 22px;
   line-height: 30px;
   text-indent: 2px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .project-data-desc a{
   text-decoration: none;
