@@ -15,7 +15,11 @@ function About() {
           </div>
           <div id='para'> 
             <p> I am Anvesh Damuluri. I have completed my masters in software engineering at ISEP. I worked as an intern at Beyond. My role is Fullstack developer. Today clear in my mind to learn technical knowledge to compete in this world as well as learn interpersonal skills to develop my career in a professional path.  </p><br/>
-            <p> I am coachable , truly hungry to learn, I am passionate to work,  I have that passion to learn, I can grasp technologies quickly. </p>
+            <p> Tech-savvy professional with strong background in software engineering and superior skills in working
+                in both team-based and independent capacities. Skilled at developing, optimizing and reworking
+                systems to meet specific customer requirements. Highly proficient in multiple types of programming
+                languages. Bringing strong work ethic and excellent organizational skills to any setting.
+          </p>
           </div>
           <div className='download'>
             <div>

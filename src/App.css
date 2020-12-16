@@ -10,7 +10,7 @@
 } 
 
 html{ 
-  background: url(./Public/Images/back.jpg) no-repeat center center fixed; 
+  background: url(./Public/Images/backone.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +21,7 @@ html{
 
 body{
   min-height: 100vh;
-  color: rgb(255, 255, 255);
+  color: black;
 }
 
 h1{
@@ -36,7 +36,8 @@ h1{
   align-items: center;
   padding: 10px;
   height: 8vh;
-  color: lavender;
+  color: black;
+  /* color: lavender; */
   /* box-shadow: 0 20px 20px rgba(114, 253, 54, 0.5); */
   box-shadow: 0 20px 20px rgba(220, 20, 60, 0.5);
   transform: 10px;
@@ -53,6 +54,7 @@ h1{
   color: red;
   font-size: 40px;
   padding: 10px;
+
 }
 
 .navbar{
@@ -73,14 +75,14 @@ h1{
 }
 
 .nav-home a{
-  color: lavender;
+  color: black;
   cursor: pointer;
   width: 10px;
   padding: 10px;
 }
 
-.nav-home a:hover{
-  background-color: rgb(219, 21, 21);
+.nav-home .nav-links a:hover{
+  background-color: rgb(144, 230, 241);
   border-radius: 50px;
 }
 button{
@@ -95,16 +97,17 @@ button{
 
 }
 .nav-links a{
-  color: lavender;
+  color: black;
   cursor: pointer;
   width: auto;
   padding: 10px;
+  font-style: initial;
 }
 
 
  a:hover{
-  background-color: rgb(219, 21, 21);
-  border-radius: 50px;
+  background-color: rgb(144, 230, 241);
+    border-radius: 50px;
 }
 
 
@@ -120,16 +123,16 @@ button{
 
 .card {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background: transparent;
   align-items: center;
   flex-direction: row;
-  width: 70%;
+  width: 80%;
   height: 40rem;
   box-shadow: 0 20px 20px rgba(245, 130, 130, 0.3), 0px 0px 50px rgba(243, 120, 120, 0.3);
-  border-radius: 30px;
+  border-radius: 40px;
   padding: 0rem 5rem;
-  background-color: rgba(206, 239, 250,0.2);
+  background: rgba(253, 189, 199) ;
 
 }
 
@@ -175,7 +178,6 @@ button{
  }
 
 .card-image img{
-  width: auto;
   z-index: 2;
   border-radius: 10%;
   padding: 20px;
@@ -201,31 +203,24 @@ button{
   padding: 35px;
   padding: 20px;
   font-weight: lighter;
-  color: rgba(255, 238, 7, 0.986);
+  color: blue;
   text-align: top;
   
 }
 
 .card-text h1{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
-  background:rgba(240, 236, 236, 0.2);
   border-radius: 20px;
 }
 .card-text h1 #emoji{
-  color: rgb(2, 14, 56);
-  padding: 2px;
-
+  color: rgb(248, 0, 124);
 }
-.card-para span{
-  font-size: 1.7rem;
-  font-weight: initial;
-
-}
-.card-text #sub-text{
-  color: rgb(255, 160, 160);
-
+.card-para span {
+  font-weight: bolder;
+  font-size: 5em;
+  color: rgb(15, 0, 0);
 }
 
 
@@ -239,8 +234,6 @@ button{
   margin: auto;
   width: auto; 
   height: auto;
-  font-size: large;
-  font-weight: normal;
   text-align: justify;
   position: relative;
   /* padding: 20px; */
@@ -332,22 +325,18 @@ button{
 }
 .container-about-info{
   padding:0 2rem;
+
 }
 
- #para p{
+#para p{
   font-size: 22px;
+  font-weight: bolder;
   line-height: 30px;
-  text-indent: 2px;
-  color: rgb(255, 255, 255);
+  text-indent: 2rem;
+  color:  rgb(16, 0, 27);
+
 }
 
-.footer-text p{
- 
-  font-size: 22px;
-  line-height: 30px;
-  text-indent: 2px;
-  color: rgb(255, 255, 255);
-}
 
 .container-skills{
   display: flex;
@@ -357,7 +346,7 @@ button{
   margin-left: 10%;
   margin-right: 10%;
   height: 50px;
-  color: rgb(255, 255, 255);
+  color: rgb(71, 5, 116)
 }
 @media (max-width: 800px) {
   .container-skills{
@@ -524,21 +513,23 @@ button{
  padding: 0 2rem;
  height: auto;
  width: 100%;
- background: transparent;
-
+ position: relative;
 }
 @media (max-width: 800px) {
   .container-project{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: absolute;
   }
 }
-
 div .project-data{
   width:auto;
   height: auto;
   padding: 25px;
+  background: rgba(255, 182, 193,0.9) ;
+  
 }
 @media (max-width: 800px) {
   div .project-data{
@@ -548,12 +539,16 @@ div .project-data{
     padding: 1rem;
   }
 }
-
 .project-data-header{
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 20vh;
+}
+.project-data-header h1{
+  font-size: 1.7rem;
+  font-weight: bold;
+  border-radius: 20px;
   color: rgba(8, 69, 238, 0.9);
 }
 .project-data-desc{
@@ -561,13 +556,19 @@ div .project-data{
   top: 40%;
   width: 350px;
   font-size: 22px;
+  font-weight: normal;
   line-height: 30px;
+  padding: 5px;
   text-indent: 2px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  
 }
 .project-data-desc a{
   text-decoration: none;
   padding: 5px;
+  height: 10vh;
+
+ color: red;
 }
 
 .container-contact{
@@ -581,7 +582,7 @@ div .project-data{
   font-size: 22px;
   text-align: center;
   line-height: 2;
-  color: rgb(231, 220, 170);;
+  background: rgba(255, 182, 193,0.9);
 
 }
 @media (max-width: 800px) {
@@ -591,6 +592,7 @@ div .project-data{
     align-items: center;
     padding: 5px;
   }
+
 }
 
 .container-contact a{
