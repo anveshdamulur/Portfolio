@@ -25,7 +25,7 @@ function Projects() {
                         <li>led the team of 5 members.</li>
                         <li>Drafted the project document.</li>
                       </ul>
-                      <a></a>
+                     
                 </div>
             </div>
          
