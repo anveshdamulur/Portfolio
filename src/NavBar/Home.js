@@ -6,7 +6,7 @@ function Home() {
           <div className='banner'>
               <div className='card'>
                   <div className='card-text'>
-                      <h1>Hello, I'am <i>Anvesh Damuluri <span id='emoji'>;)</span></i></h1><br/>
+                      <h1>Hello, I am <i>Anvesh Damuluri <span id='emoji'>;)</span></i></h1><br/>
                       {/* <h1></h1><br/> */}
                       <div className='card-para'>
                           <span id='sub-text'> Front-End Web Developer</span>
