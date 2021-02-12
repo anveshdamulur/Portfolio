@@ -12,7 +12,7 @@ function Projects() {
                                     </div>
                               </div>
                               <div className='card-body'>
-                                    <div className='card-body card-text p-2'>
+                                    <div className='card-body card-text p-2' style={{fontSize:'18px'}}>
                                           <ul>
                                                 <li>
                                                 Created a web site with login and registration pages validations.
@@ -25,8 +25,8 @@ function Projects() {
                                     </div>
                               </div>
                               <div className="card-footer">
-                                          <button type="button" className="btn btn-primary bg-light ml-2">
-                                                <a href="https://github.com/anveshdamulur/Campgrounds/tree/master">Go To Git</a>
+                                          <button type="button" className="btn btn-outline-primary ml-2" >
+                                                <a href="https://github.com/anveshdamulur/Campgrounds/tree/master" style={{textDecoration:'none',fontWeight:'bold', color:'black',background:'none'}}>Go To Git</a>
                                           </button>
                               </div>     
                         </div>
@@ -51,8 +51,8 @@ function Projects() {
                               </div>
                              
                               <div className="card-footer">
-                                          <button type="button" className="btn btn-primary bg-light">
-                                                <a href="https://github.com/anveshdamulur/EmployeeManagement">Go To Git</a>
+                                          <button type="button" className="btn btn-outline-primary ml-2">
+                                                <a href="https://github.com/anveshdamulur/EmployeeManagement" style={{textDecoration:'none',fontWeight:'bold', color:'black',background:'none'}}>Go To Git</a>
                                           </button>
                               </div>  
                         </div>
@@ -106,8 +106,8 @@ function Projects() {
                                      Why are you waiting !!! Here it is..</p>
                               </div>
                               <div class="card-footer">
-                                          <button type="button" className="btn btn-primary bg-light">
-                                                <a href="https://react-hotel-application.herokuapp.com/">Go To Live</a>
+                                          <button type="button" className="btn btn-outline-primary ml-2">
+                                                <a href="https://react-hotel-application.herokuapp.com/" style={{textDecoration:'none',fontWeight:'bold', color:'black',background:'none'}}>Go To Live</a>
                                           </button>
                               </div>
                         </div>
@@ -135,8 +135,8 @@ function Projects() {
                                      Why are you waiting !!! Here it is..</p>
                               </div>
                               <div className="card-footer">
-                                          <button type="button" className="btn btn-primary bg-light">
-                                                <a href="https://space-x-awesome-app.herokuapp.com/">Go to Live</a>
+                                          <button type="button" className="btn btn-outline-primary ml-2">
+                                                <a href="https://space-x-awesome-app.herokuapp.com/" style={{textDecoration:'none',fontWeight:'bold', color:'black',background:'none'}}>Go to Live</a>
                                           </button>
                               </div>  
                         </div>
@@ -160,8 +160,8 @@ function Projects() {
                                      Why are you waiting !!! Here it is..</p>
                               </div>
                               <div className="card-footer">
-                                    <button type="button" className="btn btn-primary bg-light">
-                                          <a href="https://loumireactslideshowapp.herokuapp.com/">Go to Live</a>
+                                    <button type="button" className="btn btn-outline-primary ml-2">
+                                          <a href="https://loumireactslideshowapp.herokuapp.com/" style={{textDecoration:'none',fontWeight:'bold',color:'black',background:'none'}}>Go to Live</a>
                                     </button>
                               </div>
                         </div>
